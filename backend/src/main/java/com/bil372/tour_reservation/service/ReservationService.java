@@ -19,4 +19,8 @@ public class ReservationService {
         return reservationRepository.findReservationsByUserId(userId);
     }
 
+    public List<Reservation> getReservationByUserId(Integer userId) {
+        return reservationRepository.findReservationByUserId(userId);
+    }
+
 }

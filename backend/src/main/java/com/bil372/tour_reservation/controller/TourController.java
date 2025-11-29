@@ -36,4 +36,8 @@ public class TourController {
     public List<Tour> getTopRatedTours() {
         return tourService.getTopRatedTours();
     }
+
+
+
+    
 }
