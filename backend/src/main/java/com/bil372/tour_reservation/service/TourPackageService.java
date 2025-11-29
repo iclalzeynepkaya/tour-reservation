@@ -31,4 +31,18 @@ public class TourPackageService {
     public List<TourPackage> getPackagesByDateRange(java.time.LocalDate startDate, java.time.LocalDate endDate) {
         return tourPackageRepository.findPackagesByDateRange(startDate, endDate);
     }
-}
+
+    public List<TourPackage> getPackagesByStartDate(java.time.LocalDate startDate) {
+        return tourPackageRepository.findPackagesByStartDate(startDate);
+    }
+
+    public List<TourPackage> getPackagesByEndDate(java.time.LocalDate endDate) {
+        return tourPackageRepository.findPackagesByEndtDate(endDate);
+    }
+
+    public List<TourPackage> getPackagesByHotelRate(Integer stars) {
+        return tourPackageRepository.findPackagesByHotelRate(stars);
+    }
+
+
+}    

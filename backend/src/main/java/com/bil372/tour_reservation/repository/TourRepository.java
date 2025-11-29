@@ -37,5 +37,8 @@ public interface TourRepository extends JpaRepository<Tour, Integer> {
         nativeQuery = true
     )
     List<Tour> findTopRatedTours();
+
+
+
     
 }
